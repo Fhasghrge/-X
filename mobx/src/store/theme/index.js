@@ -1,7 +1,7 @@
 import {observable, action} from 'mobx'
 
 class Theme {
-  @observable color = "",
+  @observable color = "";
 
   @action.bound
   async changeColor(str) {

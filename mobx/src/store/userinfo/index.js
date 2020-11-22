@@ -1,12 +1,13 @@
 import { observable, action } from "mobx"
 
 class Userinfo {
-  @observable name = "",
-  @observable age = 0,
+  @observable name = "";
+  @observable age = 0;
 
   @action.bound
   async changeName(str) {
-    this.name = str
+    console.log(str)
+    this.name = String(str)
   }
 
   @action.bound
